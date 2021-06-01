@@ -6,7 +6,7 @@
  
  New topics:
  > operator > == <: Used for creating conditions with variables
-
+ 
  
  */
 
@@ -17,16 +17,22 @@ int ypos = 200;
 void setup() {
   size(600, 400);
   noCursor();
-
 }
 
 void draw() {
   clear();
   background(210);
 
-  xpos += 1;
-  if (xpos > )
- 
+  xpos += 2;
+
+
+  if (xpos > 600)
+  {
+    xpos = 0;
+  }
+
+  println(xpos);
+
   fill(255, 0, 0);
   ellipse(xpos, ypos, 50, 50);
 }
